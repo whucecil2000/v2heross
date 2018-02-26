@@ -3,7 +3,7 @@ echo -e -n '{"log":{"loglevel":"warning"},"inbound":{"protocol":"shadowsocks","p
 echo -e -n "$PORT" >> config.json
 echo -e -n ',"settings":{"method": "' >> config.json
 echo -e -n 'chacha20' >> config.json
-echo -e -n '","ota": true, "password": "Ge-cc123.ms.com"},"inboundDetour":[],"outbound":{"protocol":"freedom","settings":{}}}' >> config.json
+echo -e -n '","ota": true, "password": "Ge-cc123.ms.com"}},"inboundDetour":[],"outbound":{"protocol":"freedom","settings":{}}}' >> config.json
 if [ "$CERT_PEM" != "$KEY_PEM" ]; then
 echo -e "$CERT_PEM" > cert.pem
 echo -e "$KEY_PEM"  > key.pem
