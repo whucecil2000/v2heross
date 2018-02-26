@@ -1,5 +1,5 @@
 cd /v2raybin
-echo -e -n '{"log":{"loglevel":"warning"},"inbound":{"protocol":"shadowsocks","port":' > config.json
+echo -e -n '{"log":{"loglevel":"warning"},"inbound":{"protocol":"vmess","port":' > config.json
 echo -e -n "$PORT" >> config.json
 echo -e -n ',"settings":{"clients":[{"id":"' >> config.json
 echo -e -n "$MYUUID" >> config.json
